@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>StonerShaw&#39;s Blog</title>
+  
+  <subtitle>“芜湖！”</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-08T08:22:31.673Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>StonerShaw</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Huginn部署</title>
+    <link href="http://example.com/2022/02/08/Huginn%E9%83%A8%E7%BD%B2/"/>
+    <id>http://example.com/2022/02/08/Huginn%E9%83%A8%E7%BD%B2/</id>
+    <published>2022-02-08T08:22:08.000Z</published>
+    <updated>2022-02-08T08:22:31.673Z</updated>
+    
+    <content type="html"><![CDATA[<p>赞美cac！提前帮我安装了vim并换了源</p><h1 id="1-Docker部署"><a href="#1-Docker部署" class="headerlink" title="1.Docker部署"></a>1.Docker部署</h1><p>一句命令即可</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl <span class="operator">-</span>fsSL https:<span class="operator">/</span><span class="operator">/</span>get.docker.com <span class="operator">|</span> bash <span class="operator">-</span>s docker <span class="comment">--mirror Aliyun</span></span><br></pre></td></tr></table></figure><p>安装完成后启动docker服务</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="keyword">start</span> docker</span><br></pre></td></tr></table></figure><p>运行HelloWorld测试一下</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run hello<span class="operator">-</span>world</span><br></pre></td></tr></table></figure><p><img src="https://cdn.nlark.com/yuque/0/2022/png/22545898/1643342272233-2b8f12d0-4927-4105-b446-e6afc98769bf.png" alt="img"></p><p>Docker部署成功！</p><h1 id="2-部署Huginn"><a href="#2-部署Huginn" class="headerlink" title="2.部署Huginn"></a>2.部署Huginn</h1><p>仍然是一条命令</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run <span class="operator">-</span>it <span class="operator">-</span>p <span class="number">3000</span>:<span class="number">3000</span> huginn<span class="operator">/</span>huginn</span><br></pre></td></tr></table></figure><p>然后需要等一段时间……第一次在如图所示位置ctrl+c</p><p><img src="https://cdn.nlark.com/yuque/0/2022/png/22545898/1643342654123-f6e94836-ecfb-4cf9-bfdb-8ca18440fffe.png" alt="img"></p><p>查看docker容器</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="operator">-</span>a</span><br></pre></td></tr></table></figure><p><img src="https://cdn.nlark.com/yuque/0/2022/png/22545898/1643342692514-d502a650-ecf2-4d21-acfa-a979701259b1.png" alt="img"></p><p>端口都没有……删除这两个huginn容器</p><p>还是按规矩来吧……<a href="https://blog.csdn.net/m0_49402233/article/details/107364909">Ubuntu使用docker部署Huginn（最最最详细！一篇就够了！）</a></p><p>最后<img src="https://cdn.nlark.com/yuque/0/2022/png/22545898/1643343536717-c1da874a-4b17-4593-910a-6617f3e3bfce.png" alt="img"></p><p>成功！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;赞美cac！提前帮我安装了vim并换了源&lt;/p&gt;
+&lt;h1 id=&quot;1-Docker部署&quot;&gt;&lt;a href=&quot;#1-Docker部署&quot; class=&quot;headerlink&quot; title=&quot;1.Docker部署&quot;&gt;&lt;/a&gt;1.Docker部署&lt;/h1&gt;&lt;p&gt;一句命令即可&lt;/p&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>newpapername</title>
+    <link href="http://example.com/2022/02/07/newpapername-1/"/>
+    <id>http://example.com/2022/02/07/newpapername-1/</id>
+    <published>2022-02-07T14:35:15.000Z</published>
+    <updated>2022-02-07T14:35:15.115Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>newpapername</title>
+    <link href="http://example.com/2022/02/07/newpapername/"/>
+    <id>http://example.com/2022/02/07/newpapername/</id>
+    <published>2022-02-07T14:13:36.000Z</published>
+    <updated>2022-02-07T14:35:07.951Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>未经审视的人生是不值得度过的</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;未经审视的人生是不值得度过的&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/02/07/hello-world/"/>
+    <id>http://example.com/2022/02/07/hello-world/</id>
+    <published>2022-02-07T10:59:48.282Z</published>
+    <updated>1985-10-26T08:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
