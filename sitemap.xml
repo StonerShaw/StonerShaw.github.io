@@ -11,24 +11,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/huginns/index.html</loc>
-    
-    <lastmod>2022-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/huginns/Huginn%E9%83%A8%E7%BD%B2.html</loc>
-    
-    <lastmod>2022-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/about/index.html</loc>
     
     <lastmod>2022-02-07</lastmod>
